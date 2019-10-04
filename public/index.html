@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Let's Travel P1</title>
+  <!-- ======================== CSS ======================== -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ============= HEADER =============== -->
+  <header class="page-header">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">Let's Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin Page</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Phone number" aria-label="call">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Call me</button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- ============= MAIN =============== -->
+  <main class="page-main">
+    <div class="container">
+
+      <!-- Carousel -->
+      <div class="travel-carousel mt-20">
+        <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slider-1.jpg" class="d-block w-100" alt="Golden Gate Bridge">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Golden Gate Bridge</h5>
+                <p>San Francisco, U.S.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider-2.jpg" class="d-block w-100" alt="Niagara Falls">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Niagara Falls</h5>
+                <p>Border of Ontario, Canada, and New York, United States</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider-3.jpg" class="d-block w-100" alt="Stonehenge">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Stonehenge</h5>
+                <p>Wiltshire, England</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="row mt-20">
+        <div class="col-4">
+          <div class="card">
+            <img src="images/img-1.jpg" alt="Card Image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Eiffel Tower</h4>
+              <p class="card-text">The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris,
+                France.</p>
+              <button class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img src="images/img-2.jpg" alt="Card Image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Big Ben</h4>
+              <p class="card-text">Big Ben is the nickname for the Great Bell of the clock at the north end of the
+                Palace of Westminster in London.</p>
+              <button class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img src="images/img-3.jpg" alt="Card Image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Statue of Liberty</h4>
+              <p class="card-text">The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New
+                York Harbor in New York City, in the United States.</p>
+              <button class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-20">
+        <div class="col-4">
+          <div class="card">
+            <img src="images/img-4.jpg" alt="Card Image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Sydney Opera House</h4>
+              <p class="card-text">The Sydney Opera House is a multi-venue performing arts centre in Sydney, Australia.
+                It is one of the 20th century's most famous and distinctive buildings.</p>
+              <button class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img src="images/img-5.jpg" alt="Card Image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Parliament Hill</h4>
+              <p class="card-text">Parliament Hill, colloquially known as The Hill, is an area of Crown land on the
+                southern banks of the Ottawa River in downtown Ottawa, Ontario. Its Gothic revival suite of buildings is
+                the home of the Parliament of Canada and has architectural elements of national symbolic importance.</p>
+              <button class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img src="images/img-6.jpg" alt="Card Image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Great Wall of China</h4>
+              <p class="card-text">The Great Wall of China is a series of fortifications made of stone, brick, rammed
+                earth, wood, and other materials, generally built to protect the Chinese states and empires against the
+                raids and invasions.</p>
+              <button class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ============= FOOTER =============== -->
+  <footer class="page-footer">
+
+    <div class="navbar navbar-light bg-light">
+      <div class="container">
+        <span class="navbar-text">
+          ©2033, All Rights Reserved
+        </span>
+        <!-- contact-us-modal button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-us-modal">Contact
+          Us</button>
+        <!-- contact-us-modal modal -->
+        <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="modal-name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="modal-name" placeholder="Your name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="modal-phone" class="col-form-label">Phone number:</label>
+                    <input type="text" class="form-control" id="modal-phone" placeholder="Phone number">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="modal-message" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="modal-message" rows="3"
+                      placeholder="Please write your comments here"></textarea>
+                  </div>
+                  <input type="submit" class="btn btn-primary">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
