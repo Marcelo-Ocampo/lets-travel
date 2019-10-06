@@ -1,6 +1,56 @@
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
-.page-footer{
+
+.page-footer {
   margin-top: 50px;
+}
+
+.page-wrapper {
+  margin: 50px auto;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+
+.page-wrapper h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-block {
+  padding: 15px;
+}
+
+.articles {
+  margin-top: 15px;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w5 {
+  width: 5%;
+}
+
+.article-inline:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.article-inline {
+  padding: 10px;
+  box-sizing: border-box;
 }
