@@ -60,12 +60,13 @@
                         <div class="card-block">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                                 aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
-                                    role="tab" aria-controls="v-pills-home" aria-selected="true">Articles</a>
-                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Mails</a>
-                                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
-                                    href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                <a class="nav-link active" id="v-pills-articles-tab" data-toggle="pill"
+                                    href="#v-pills-articles" role="tab" aria-controls="v-pills-home"
+                                    aria-selected="true">Articles</a>
+                                <a class="nav-link" id="v-pills-mails-tab" data-toggle="pill" href="#v-pills-mails"
+                                    role="tab" aria-controls="v-pills-mails" aria-selected="false">Mails</a>
+                                <a class="nav-link" id="v-pills-callback-tab" data-toggle="pill"
+                                    href="#v-pills-callback" role="tab" aria-controls="v-pills-callback"
                                     aria-selected="false">Call me back! requests</a>
                             </div>
                         </div>
@@ -75,17 +76,23 @@
                     <div class="card">
                         <div class="card-block">
                             <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                    aria-labelledby="v-pills-home-tab">
-                                    <button class="btn btn-primary">Add article</button>
+                                <div class="tab-pane fade show active" id="v-pills-articles" role="tabpanel"
+                                    aria-labelledby="v-pills-articles-tab">
+                                    <button class="btn btn-primary add-post-btn">Add article</button>
                                     <div class="articles">
 
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                    aria-labelledby="v-pills-profile-tab">Mails content</div>
-                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                    aria-labelledby="v-pills-messages-tab">Callback content</div>
+                                <div class="tab-pane fade" id="v-pills-mails" role="tabpanel"
+                                    aria-labelledby="v-pills-mails-tab">Mails content</div>
+                                <div class="tab-pane fade" id="v-pills-callback" role="tabpanel"
+                                    aria-labelledby="v-pills-callback-tab">Callback content</div>
+                                <div class="tab-pane fade" id="v-pills-add-post" role="tabpanel"
+                                    aria-labelledby="v-pills-add-post-tab">
+                                    <h2>
+                                        Create a new post
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     </div>
