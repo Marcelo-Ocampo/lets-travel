@@ -23,6 +23,7 @@ addPostForm.addEventListener('submit', (e) => {
         .then((data) => window.history.go());
 })
 
+// Concentrating image directory input into one source: image URL field or image file button
 addPostImgUrl.addEventListener('change', function () {
     disableInput(this, addPostImgFile);
 });
