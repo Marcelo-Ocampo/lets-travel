@@ -25,4 +25,5 @@ app.use(multer({
     storage: imageStorage
 }).single('imageFile'));
 
+//------------ Routers --------------
 app.use('/posts', postsRouter);

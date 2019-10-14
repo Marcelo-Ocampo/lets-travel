@@ -3,12 +3,17 @@ let uniqid = require('uniqid');
 let express = require('express');
 let router = express.Router();
 
-module.exports = router;
-
 router.get('/', async (req, res) => {
     let posts = await Post.find();
     res.send(posts);
 });
+
+router.get('/:id', async (req, res) => {
+    let post = await Post.findOne({
+        id: req.params.id
+    });
+    res.send(post);
+})
 
 router.post('/', async (req, res) => {
     let reqBody = req.body;
@@ -39,3 +44,17 @@ router.delete('/:id', async (req, res) => {
     });
     res.send('Deleted!');
 })
+
+router.put('/:id', async (req, res) => {
+    let id = req.params.id;
+    await Post.updateOne({
+        id: id
+    }, {
+        title: req.body.title,
+        text: req.body.text,
+        description: req.body.description
+    });
+    res.send('Updated!');
+})
+
+module.exports = router;

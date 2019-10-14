@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="date w25">${post.date}</div>
                 <div class="country w20">${post.country}</div>
                 <div class="edit w10">
-                    <button class="btn btn-link">Edit</button>
+                    <button class="btn btn-link update-btn">Edit</button>
                 </div>
                 <div class="remove w10">
-                    <button class="btn btn-link">Remove</button>
+                    <button class="btn btn-link remove-btn">Remove</button>
                 </div>
             </article>`;
         articles.insertAdjacentHTML('beforeend', postHTML);
