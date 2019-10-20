@@ -1,9 +1,9 @@
 let addPostBtn = document.querySelector('.add-post-btn');
 
-//GET request for articles for admin page
 document.addEventListener('DOMContentLoaded', async () => {
     addPosts();
     addCallbackRequests();
+    addMails();
 })
 
 //Showing add post form by chaging "show" and "active" classes from Bootstrap CSS
@@ -60,5 +60,28 @@ async function addCallbackRequests() {
                 </div>
             </article>`;
         requestsBlock.insertAdjacentHTML('beforeend', callbackRequestHTML);
+    });
+}
+
+async function addMails() {
+    let mailsBlock = document.querySelector('#v-pills-mails');
+    mailsBlock.innerHTML = "";
+    let orderID = 1;
+    let mailsRequests = await getMails(); //from mails.js in "js" folder in local
+    mailsRequests.forEach((request) => {
+        let mailHTML =
+            `<article
+                class="d-flex justify-content-between align-items-center article-inline">
+                <div class="order w5">${orderID++}</div>
+                <input class="id" type="hidden" value="${request.id}">
+                <div class="name w30">${request.name}</div>
+                <div class="name w30">${request.email}</div>
+                <div class="date w25">${request.date}</div>
+                <div class="remove w10">
+                    <button class="btn btn-link remove-btn">Remove</button>
+                </div>
+                <div class="message w100">${request.message}</div>
+            </article>`;
+        mailsBlock.insertAdjacentHTML('beforeend', mailHTML);
     });
 }

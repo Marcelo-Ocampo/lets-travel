@@ -40,10 +40,6 @@
                     </ul>
                 </div>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Phone number" aria-label="call">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Call me</button>
-                </form>
             </div>
         </nav>
 
@@ -64,7 +60,8 @@
                                     href="#v-pills-articles" role="tab" aria-controls="v-pills-home"
                                     aria-selected="true">Articles</a>
                                 <a class="nav-link" id="v-pills-mails-tab" data-toggle="pill" href="#v-pills-mails"
-                                    role="tab" aria-controls="v-pills-mails" aria-selected="false">Mails</a>
+                                    role="tab" aria-controls="v-pills-mails" aria-selected="false">Mails
+                                    requests</a>
                                 <a class="nav-link" id="v-pills-callback-tab" data-toggle="pill"
                                     href="#v-pills-callback" role="tab" aria-controls="v-pills-callback"
                                     aria-selected="false">Call me back! requests</a>
@@ -84,7 +81,9 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-mails" role="tabpanel"
-                                    aria-labelledby="v-pills-mails-tab">Mails content</div>
+                                    aria-labelledby="v-pills-mails-tab">
+                                    <!-- Filled by main.js with get mailsReqs request -->
+                                </div>
                                 <div class="tab-pane fade" id="v-pills-callback" role="tabpanel"
                                     aria-labelledby="v-pills-callback-tab">
                                     <!-- Filled by main.js with get callbackReqs request -->
@@ -161,6 +160,8 @@
     <script src="js/delete-post.js"></script>
     <script src="js/update-post.js"></script>
     <script src="js/get-callback-requests.js"></script>
+    <script src="js/delete-callback-reqs.js"></script>
+    <script src="js/mails.js"></script>
     <script src="js/main.js"></script>
 </body>
 

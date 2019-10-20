@@ -54,6 +54,10 @@
   width: 60%;
 }
 
+.w100 {
+  width: 100%;
+}
+
 .article-inline:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.05);
 }
@@ -61,4 +65,5 @@
 .article-inline {
   padding: 10px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
