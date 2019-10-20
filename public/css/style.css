@@ -50,6 +50,10 @@
   width: 5%;
 }
 
+.w60 {
+  width: 60%;
+}
+
 .article-inline:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.05);
 }

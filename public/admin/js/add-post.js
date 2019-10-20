@@ -8,8 +8,10 @@ let addPostText = document.getElementById('add-post-text');
 addPostForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let postText = addPostText.value;
+    // let date = new Date();
     let data = new FormData(); //Using FormData class to start working with uploaded files
     data.append('title', addPostTitle.value); // adding fields to the data object that correspond to form information
+    // data.append('date', date.toString().substring(0, 15));
     data.append('country', addPostCountry.value);
     data.append('imageURL', addPostImgUrl.value);
     data.append('text', postText);
