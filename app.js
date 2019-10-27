@@ -6,6 +6,7 @@ let multer = require('multer');
 let postsRouter = require('./routes/posts');
 let callbackRequestsRouter = require('./routes/callback-requests');
 let mailsRouter = require('./routes/mails');
+let sightsRouter = require('./routes/sights');
 
 //------------ Connections --------------
 app.listen(3000, () => console.log('Listening to 3000...'));
@@ -13,6 +14,8 @@ app.listen(3000, () => console.log('Listening to 3000...'));
 mongoose.connect('mongodb://localhost/travels')
     .then(() => console.log('Connected to mongoDB/travels...'))
     .catch(() => console.log('Error connecting to mongoDB/travels'));
+
+app.set('view engine', 'ejs');
 
 //------------ App uses --------------
 app.use(express.static('public'));
@@ -31,3 +34,4 @@ app.use(multer({
 app.use('/posts', postsRouter);
 app.use('/callback-requests', callbackRequestsRouter);
 app.use('/mails', mailsRouter);
+app.use('/sight', sightsRouter);
