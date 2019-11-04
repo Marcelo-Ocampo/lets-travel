@@ -7,6 +7,7 @@ let postsRouter = require('./routes/posts');
 let callbackRequestsRouter = require('./routes/callback-requests');
 let mailsRouter = require('./routes/mails');
 let sightsRouter = require('./routes/sights');
+let usersRouter = require('./routes/users');
 
 //------------ Connections --------------
 app.listen(3000, () => console.log('Listening to 3000...'));
@@ -35,3 +36,4 @@ app.use('/posts', postsRouter);
 app.use('/callback-requests', callbackRequestsRouter);
 app.use('/mails', mailsRouter);
 app.use('/sight', sightsRouter);
+app.use('/users', usersRouter);
