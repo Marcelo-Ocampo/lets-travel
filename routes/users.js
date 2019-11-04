@@ -2,6 +2,7 @@ let User = require('../models/users.js');
 let express = require('express');
 let router = express.Router();
 let bcrypt = require('bcrypt');
+let auth = require('../controllers/auth');
 
 router.post('/signin', async (req, res) => {
     let email = req.body.email;
@@ -12,11 +13,17 @@ router.post('/signin', async (req, res) => {
     if (signInUser.length > 0) {
         let comparedPass = await bcrypt.compare(password, signInUser[0].password);
         if (comparedPass) {
-            res.send('Logged in');
+            let token = auth.generateToken(signInUser[0]);
+            res.cookie('auth_token', token);
+            res.send({
+                redirectURL: '/admin'
+            });
         } else {
+            res.status(400);
             res.send('Wrong password');
         }
     } else {
+        res.status(400);
         res.send('User does not exist');
     }
 })

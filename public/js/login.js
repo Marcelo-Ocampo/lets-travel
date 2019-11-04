@@ -14,9 +14,16 @@ signInForm.addEventListener('submit', (e) => {
                 email,
                 password
             })
-        }).then((res) => res.text())
+        }).then((res) => {
+            if (res.status === 400) {
+                throw new Error();
+            }
+            return res.json()
+        })
         .then((data) => {
-            alert(data);
+            window.location.href = data.redirectURL;
+        }).catch(() => {
+            alert('Wrong user or password');
             signInForm.reset();
         });
 })
